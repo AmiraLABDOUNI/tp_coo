@@ -57,7 +57,7 @@ class Usine(Local):
     )
 
 
-class QuantiteRessource(models.Models):
+class QuantiteRessource(models.Model):
     ressource = models.ForeignKey(
         Ressource,
         on_delete=models.CASCADE,
@@ -65,7 +65,7 @@ class QuantiteRessource(models.Models):
     quantite = models.IntegerField()
 
 
-class Etape(models.Models):
+class Etape(models.Model):
     nom = models.CharField(max_length=100)
     machine = models.ForeignKey(
         Machine,
