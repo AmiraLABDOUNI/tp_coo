@@ -52,7 +52,7 @@ class Machine(models.Model):
 
 
 class Usine(Local):
-    machines = models.ForeignKey(
+    machines = models.ManyToManyField(
         Machine,
     )
 
