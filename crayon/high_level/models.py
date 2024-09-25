@@ -80,6 +80,7 @@ class Etape(models.Models):
         "self",
         null=True,
         on_delete=models.CASCADE,
+        blank=True,
     )
 
 
