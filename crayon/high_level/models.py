@@ -31,28 +31,6 @@ class Objet(models.Model):
 
 
 class Ressource(Objet):
-    def __init__(self):
-        pass
-
-    def __str__(self):
-        return self.nom
-
-
-class Stock(models.Model):
-    ressource = models.ForeignKey(
-        Ressource,
-        on_delete=models.CASCADE,
-    )
-    nombre = models.IntegerField()
-
-    def __str__(self):
-        return self.nom
-
-
-class SiegeSocial(Local):
-    def __init__(self):
-        pass  # le constructeur fait rien psq la classe est vide y a pas de methode
-
     def __str__(self):
         return self.nom
 
@@ -65,12 +43,49 @@ class Machine(models.Model):
     def __str__(self):
         return self.nom
 
+    def costs(self):
+        return self.prix
+
 
 class Usine(Local):
     machines = models.ManyToManyField(
         Machine,
     )
 
+    def __str__(self):
+        return self.nom
+
+    def costs(self):
+        cost = 0
+        costmachine = 0
+        ress = 0
+        for machines in self.machines.all():
+            costmachine = machines.costs()
+
+        for stock in self.stock_set.all():
+            ress = stock.ressource.prix * stock.nombre
+
+        cost = (ress + costmachine) + (self.surface * self.ville.prixm2)
+
+        return cost
+
+
+class Stock(models.Model):
+    ressource = models.ForeignKey(
+        Ressource,
+        on_delete=models.CASCADE,
+    )
+    nombre = models.IntegerField()
+    usine = models.ForeignKey(
+        Usine,
+        on_delete=models.CASCADE,
+    )
+
+    def __str__(self):
+        return f"{self.ressource}: {self.nombre }"
+
+
+class SiegeSocial(Local):
     def __str__(self):
         return self.nom
 
@@ -83,7 +98,10 @@ class QuantiteRessource(models.Model):
     quantite = models.IntegerField()
 
     def __str__(self):
-        return self.nom
+        return f"{self.ressource}: {self.quantite}"
+
+    def costs(self):
+        return {self.quantite * self.ressource.prix}
 
 
 class Etape(models.Model):
@@ -109,7 +127,7 @@ class Etape(models.Model):
 
 
 class Produit(Objet):
-    premier_etage = models.ForeignKey(
+    premiere_etape = models.ForeignKey(
         Etape,
         on_delete=models.CASCADE,
     )
