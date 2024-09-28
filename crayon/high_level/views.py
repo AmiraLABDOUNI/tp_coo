@@ -1,5 +1,5 @@
 from django.views.generic import DetailView
-from django.http import JsonResponse
+from django.http import JsonResponse # Importer JsonResponse pour renvoyer des réponses au format JSON
 from .models import Machine
 from .models import Usine
 from .models import Ressource
@@ -13,6 +13,7 @@ from .models import Local
 from .models import Objet
 # Create your views here.
 
+# Chaque view ns permet d'afficher le détail d'un modèle en réponse au format JSON
 
 class VilleDetailView(DetailView):
     model = Ville
@@ -23,7 +24,7 @@ class VilleDetailView(DetailView):
 
 class StockDetailView(DetailView):
     model = Stock
-
+   # Méthode pour renvoyer la réponse au format JSON
     def render_to_response(self, context, **response_kwargs):
         return JsonResponse(self.object.json())
 
