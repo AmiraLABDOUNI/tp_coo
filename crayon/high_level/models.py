@@ -16,7 +16,7 @@ class Ville(models.Model):
             "code_postal": self.code_postal,
             "prixm2": self.prixm2,
         }
-        return d
+        return d # Retourne un dictionnaire contenant les informations de la ville
 
 
 class Local(models.Model):
@@ -36,7 +36,7 @@ class Local(models.Model):
         }
         return d1
 
-    class Meta:  # classe mere
+    class Meta:  # classe abstraite (mere)
         abstract = True
 
 
@@ -50,7 +50,8 @@ class Objet(models.Model):
             "nom": self.nom,
             "prix": self.prix,
         }
-        return d2
+        return d2 # Retourne un dictionnaire contenant les informations de l'objet
+
 
     class Meta:  # classe mere
         abstract = True
@@ -91,7 +92,8 @@ class Usine(Local):
 
     def __str__(self):
         return self.nom
-
+        
+# Calcule du coût total de l'usine (coût des ressources, machines et surface)
     def costs(self):
         cost = 0
         costmachine = 0
