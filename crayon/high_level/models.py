@@ -12,11 +12,12 @@ class Ville(models.Model):
     # conversion de la data au format json
     def json(self):
         d = {
+            "ID": self.id,
             "nom": self.nom,
             "code_postal": self.code_postal,
             "prixm2": self.prixm2,
         }
-        return d # Retourne un dictionnaire contenant les informations de la ville
+        return d  # Retourne un dictionnaire contenant les informations de la ville
 
 
 class Local(models.Model):
@@ -50,8 +51,7 @@ class Objet(models.Model):
             "nom": self.nom,
             "prix": self.prix,
         }
-        return d2 # Retourne un dictionnaire contenant les informations de l'objet
-
+        return d2  # Retourne un dictionnaire contenant les informations de l'objet
 
     class Meta:  # classe mere
         abstract = True
@@ -92,8 +92,8 @@ class Usine(Local):
 
     def __str__(self):
         return self.nom
-        
-# Calcule du coût total de l'usine (coût des ressources, machines et surface)
+
+    # Calcule du coût total de l'usine (coût des ressources, machines et surface)
     def costs(self):
         cost = 0
         costmachine = 0
