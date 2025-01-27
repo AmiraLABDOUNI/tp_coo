@@ -135,3 +135,18 @@ http://localhost:8000/admin/
 
 ```
 À cette étape, entrez l'Username et le mot de passe crée précédement et vous arriverez ainsi à l'accueil.
+
+## Utilisation et exemple
+
+À partir de l'interface, vous pouvez gérer differentes entités comme :
+
+- 3 villes
+- 2 usines (incluant des machines et des stocks).
+
+L'outil C++ permet également d'interagir avec ces données en ligne de commande.
+
+
+## Licence
+Ce projet est disponible sous licence MIT.
+
+
