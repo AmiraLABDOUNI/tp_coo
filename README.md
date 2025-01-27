@@ -57,7 +57,7 @@ sudo apt install python3-venv
 
 ### 1. Cloner le dépôt GitHub : 
 ```bash
-git clone https://github.com/NiiteeZ/Projet_Crayon.git
+git clone https://github.com/AmiraLABDOUNI/tp_coo.git
 
 ```
 
