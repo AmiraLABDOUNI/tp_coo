@@ -52,14 +52,32 @@ sudo apt install git
 sudo apt install python3-venv
 
 ``` 
-## Clonage du projet
+## Démarrage
 
 
-### 1. Cloner le dépôtGitHub : 
+### 1. Cloner le dépôt GitHub : 
 ```bash
 git clone https://github.com/NiiteeZ/Projet_Crayon.git
+
+```
+
+### 2. Se placer dans le dossier: 
+
 cd Projet_crayon/
 
+### 3. Configuration de l'environnement virtuel :
 
+**Créez un environnement virtuel :**
 
+python3 -m venv .venv
+echo .venv >> .gitignore
+
+**Activez-le selon votre système :**
+Linux/Mac :
+
+source .venv/bin/activate
+
+Windows :
+
+.venv\Scripts\activate
 
