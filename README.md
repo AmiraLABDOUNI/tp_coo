@@ -126,10 +126,11 @@ Suivez les instructions pour définir un nom d'utilisateur et un mot de passe.
 python ./manage.py runserver
 ```
 
+**Accès au serveur:**
 
-
+Accédez au serveur via :
 
 ```bash
-
+http://localhost:8000/admin/
 
 ```
