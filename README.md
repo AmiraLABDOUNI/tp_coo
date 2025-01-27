@@ -128,7 +128,7 @@ python ./manage.py runserver
 
 **Accès au serveur:**
 
-Accédez au serveur via :
+Accédez au serveur via le lien suivant :
 
 ```bash
 http://localhost:8000/admin/
