@@ -84,3 +84,23 @@ source .venv/bin/activate
 .venv\Scripts\activate
 
 ```
+### 4. Installation des dépendances:
+
+Mettez à jour pip et installez Django pour votre projet :
+
+```bash
+pip install -U pip
+pip install django
+```
+
+## Lancement du serveur Django
+
+
+
+
+
+
+
+```bash
+
+```
