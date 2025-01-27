@@ -1,8 +1,7 @@
-Titre du projet :
+
 
 # Pencil Project
 
-Auteurs et version :
 
 ## Auteurs
 - Author 1 : LABDOUNI Amira
