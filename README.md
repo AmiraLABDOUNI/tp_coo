@@ -38,24 +38,28 @@ Assurez-vous d'avoir les éléments ci-dessus installés sur votre machine.
 ```bash
 # Mettre a jour la liste des paquets
 sudo apt update
+
 # Installation de Python 3
 sudo apt install python3
+
 # Verification de l'installation de pip
 python3 -m pip -V
+
 # Installation de git
 sudo apt install git
+
 # Installation de venv (virtual environement)
 sudo apt install python3-venv
 
 ``` 
 ## Clonage du projet
 
-Clonez le dépôt GitHub :
-bash
-Copy
-Edit
+
+### 1. Cloner le dépôtGitHub : 
+```bash
 git clone https://github.com/NiiteeZ/Projet_Crayon.git
 cd Projet_crayon/
+
 
 
 
