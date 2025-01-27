@@ -33,7 +33,7 @@ Assurez-vous d'avoir les éléments ci-dessus installés sur votre machine.
 
 ## Guide d'installation
 
-#### Commandes pour les installations :
+## Commandes pour les installations :
 
 ```bash
 # Mettre a jour la liste des paquets
@@ -47,6 +47,7 @@ sudo apt install git
 # Installation de venv (virtual environement)
 sudo apt install python3-venv
 
+``` 
 ## Clonage du projet
 
 Clonez le dépôt GitHub :
