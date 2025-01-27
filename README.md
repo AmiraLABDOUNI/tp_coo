@@ -21,7 +21,7 @@ Ce projet modélise un système de gestion pour une industrie de fabrication de 
 
 ## Environnement et prérequis 
 
-** Environnement de développement :** Le projet a été développé sous Ubuntu 20.04 mais il peut être adapté à d'autres environnements avec :
+**Environnement de développement :** Le projet a été développé sous Ubuntu 20.04 mais il peut être adapté à d'autres environnements avec :
 
 Python 3
 Pip
