@@ -31,7 +31,16 @@ Ce projet modélise un système de gestion pour une industrie de fabrication de 
 
 Assurez-vous d'avoir les éléments ci-dessus installés sur votre machine.
 
+## Guide d'installation
 
+#### Commandes pour les installations :
+
+```bash
+sudo apt update
+sudo apt install python3
+python3 -m pip -V
+sudo apt install git
+sudo apt install python3-venv
 
 
 
