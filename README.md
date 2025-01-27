@@ -21,13 +21,13 @@ Ce projet modélise un système de gestion pour une industrie de fabrication de 
 
 ## Environnement et prérequis 
 
-**Environnement de développement :** Le projet a été développé sous Ubuntu 20.04 mais il peut être adapté à d'autres environnements avec :
+**Environnement de développement:** Le projet a été développé sous Ubuntu 20.04 avec :
 
-Python 3
-Pip
-Git
-Venv (environnement virtuel Python)
-WSL Ubuntu (si Windows est utilisé)
+- Python 3
+- Pip
+- Git
+- Venv (environnement virtuel Python)
+- WSL Ubuntu (si Windows est utilisé)
 
 Assurez-vous d'avoir les éléments ci-dessus installés sur votre machine.
 
