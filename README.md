@@ -134,3 +134,4 @@ Accédez au serveur via le lien suivant :
 http://localhost:8000/admin/
 
 ```
+À cette étape, entrez l'Username et le mot de passe crée précédement et vous arriverez ainsi à l'accueil.
