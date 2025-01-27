@@ -95,14 +95,14 @@ pip install django
 
 ## Lancement du serveur Django
 
-#Naviguez dans le dossier contenant le projet Django,(le dossier crayon):
+**Naviguez dans le dossier contenant le projet Django,(le dossier crayon):**
 
 ```bash
 cd crayon/
 ```
 
 
-**Application des migrations ::**
+**Application des migrations :**
 
 ```bash
 python manage.py makemigrations
@@ -112,7 +112,7 @@ python manage.py migrate
 
 Ces deux commandes nous aide a préparer et lancer le serveur Django.
 
-**Création d'un compte administrateur : :**
+**Création d'un compte administrateur :**
 
 ```bash
 python ./manage.py createsuperuser
@@ -120,7 +120,7 @@ python ./manage.py createsuperuser
 
 Suivez les instructions pour définir un nom d'utilisateur et un mot de passe.
 
-**Lancement du serveur local ::**
+**Lancement du serveur local :**
 
 ```bash
 python ./manage.py runserver
