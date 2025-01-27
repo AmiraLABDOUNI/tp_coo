@@ -62,22 +62,25 @@ git clone https://github.com/NiiteeZ/Projet_Crayon.git
 ```
 
 ### 2. Se placer dans le dossier: 
-
+```bash
 cd Projet_crayon/
+```
 
 ### 3. Configuration de l'environnement virtuel :
 
 **Créez un environnement virtuel :**
-
+```bash
 python3 -m venv .venv
 echo .venv >> .gitignore
-
+```
 **Activez-le selon votre système :**
-Linux/Mac :
+```bash
+#  Linux/Mac :
 
 source .venv/bin/activate
 
-Windows :
+#  Windows :
 
 .venv\Scripts\activate
 
+```
